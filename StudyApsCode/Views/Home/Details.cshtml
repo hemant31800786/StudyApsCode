@@ -1,0 +1,189 @@
+﻿@model StudyApsCode.Core.Domain.MoviesItem
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+
+
+<div>
+    <h4>Moives</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Poster)
+        </dt>
+
+        <dd>
+
+            <img src="@Url.Content(Model.Poster)" />
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Year)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Year)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rated)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rated)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Released)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Released)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Season)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Season)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Episode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Episode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Runtime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Runtime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Genre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Genre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Director)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Director)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Writer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Writer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Actors)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Actors)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Plot)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Plot)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Language)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Language)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Country)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Country)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Awards)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Awards)
+        </dd>
+
+
+
+
+
+        <dt>
+            <lable> Rating : </lable>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.imdbRating)
+        </dd>
+
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.imdbID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.imdbID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.seriesID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.seriesID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+
+
+
+    </dl>
+</div>
+<p>
+
+    @Html.ActionLink("Back to List", "Index")
+</p>
